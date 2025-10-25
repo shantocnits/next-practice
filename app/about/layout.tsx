@@ -9,7 +9,7 @@ export default function AboutLayout({
   return (
     <div>
       <nav>
-        <ul className=" flex gap-4 items-center m-auto justify-content-center bg-red-100 p-4">
+        <ul className="text-black flex gap-4 items-center m-auto justify-content-center bg-red-100 p-4">
           <li>
             <Link href="/about/mission">Mission</Link>
           </li>

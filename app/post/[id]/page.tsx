@@ -1,9 +1,14 @@
 import React from "react";
 import getPost from "@/lib/getPost";
+import { Suspense } from "react";
 
-export default async function PostPage({ params }: { params: { id: string } }) {
-  const { id } = params;
-  const post = await getPost(Number(id));
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default async function PostPage({ params }: PageProps) {
+  const resolvedParams = await params;
+  const post = await getPost(Number(resolvedParams.id));
 
   return (
     <div className="text-center mt-10">

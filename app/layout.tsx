@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav>
-          <ul className=" flex gap-4 items-center m-auto justify-content-center bg-amber-100 p-4">
+          <ul className="text-black flex gap-4 items-center m-auto justify-content-center bg-amber-100 p-4">
             <li>
               <Link href="/">Home</Link>
             </li>
